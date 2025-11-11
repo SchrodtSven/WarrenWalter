@@ -1,2 +1,3 @@
 # WarrenWalter
-AI, ML, NN playground
+
+Not (yet) classified stuff like AI, ML, NN in Python
