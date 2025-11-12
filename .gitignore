@@ -197,3 +197,4 @@ cython_debug/
 tmp/
 .venv
 grube.*
+.DS_Store 
