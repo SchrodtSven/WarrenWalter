@@ -1,0 +1,9 @@
+rownum,value
+23,premium unleaded (required)
+1,regular unleaded
+2,premium unleaded (recommended)
+3,flex-fuel (unleaded/E85)
+4,diesel
+5,flex-fuel (premium unleaded recommended/E85)
+6,electric
+7,flex-fuel (premium unleaded required/E85)
