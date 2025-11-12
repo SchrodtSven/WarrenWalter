@@ -1,16 +1,19 @@
-# Collection of functions for decision trees
-# FIXME! Re-implement as class
+#
+# Class managing access to/from shop data
+# 
 # AUTHOR Sven Schrodt
 # SINCE 2025-11-11
 # 
 # BibTeX citation
 #
-# @misc{clickstream_data_for_online_shopping_553,
+#@misc{clickstream_data_for_online_shopping_553,
 #   title        = {{Clickstream Data for Online Shopping}},
 #   year         = {2019},
 #   howpublished = {UCI Machine Learning Repository},
 #   note         = {{DOI}: https://doi.org/10.24432/C5QK7X}
 # }
+#
+#SEE https://archive.ics.uci.edu/dataset/553/clickstream+data+for+online+shopping
 
 import numpy as np
 import pandas as pd
@@ -21,16 +24,18 @@ from sklearn import tree
 import matplotlib.pyplot as plt
 
 class Shop:
-
+    """ Class managing access to/from shop data
+    """
     ctry = None
     color = None
     photo_loc = None
     photo_type = None
-
+    prd_main = None
+    
     def __init__(self):
-        self.init()
+        self.vrz_init()
 
-    def init(self):
+    def vrz_init(self):
 
         self.ctry = {
             "1": "Australia",
@@ -111,4 +116,11 @@ class Shop:
         self.photo_type = {
             "1": "en face",
             "2": "profile"
+        }
+
+        self.prd_main = {
+            "1": "trousers",
+            "2": "skirts",
+            "3": "blouses",
+            "4": "sale"
         }
