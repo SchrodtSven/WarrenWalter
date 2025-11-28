@@ -197,4 +197,6 @@ cython_debug/
 tmp/
 .venv
 grube.*
-.DS_Store 
+.DS_Store
+bin/
+cheatsheet.txt

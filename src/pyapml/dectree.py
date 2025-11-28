@@ -22,7 +22,7 @@ def splitdataset(balance_data:pd.DataFrame):
         balance_data (pd.DataFrame):DataFrame with data to be splitted
 
     Returns:
-        tuple[ndarray[_AnyShape, dtype[Any]], ndarray[_AnyShape, dtype[Any]], Any, Any, Any, Any]: decription
+        tuple[ndarray[_AnyShape, dtype[Any]], ndarray[_AnyShape, dtype[Any]], Any, Any, Any, Any]
     """
     X = balance_data.values[:, 1:5]
     Y = balance_data.values[:, 0]
